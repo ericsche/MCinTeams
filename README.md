@@ -55,5 +55,22 @@ Create an Azure AD app to Query the Message Center API.
 
 ### Create the Microsoft List in the team of your choosing
 
-- Open the team (you are an owner of) you want the solution to be available in.
+- Open in Teams the team (you are an owner of) you want the solution to be available in
   ![Teams Channel](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture16.png)
+- Click the + sign and add Lists as a tab in the general channel
+  ![Lists in Teams](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture17.png)
+  ![Lists in Teams2](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture18.png)
+- In the Lists Tab click Create a list
+  ![Create List](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture19.png)
+- Click the From Excel button and upload the list template you can find in the Lists Export folder
+  ![From Excel](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture20.png)
+  ![Select Excel](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture22.png)
+- Make sure you configure the right column types for each one
+  ![Colomn Types](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture23.png)
+    Title > Title.
+    Product > Single line of text.
+    PublishedTime > Date and time.
+    LastUpdate Message > Multiple lines of text.
+    LastUpdate Time > Date and time.
+    MessageID > Single line of text.
+    MessageText > Multiple lines of text.
