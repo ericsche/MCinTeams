@@ -39,7 +39,7 @@ Create an Azure AD app to Query the Message Center API.
    ![Add a Permission](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture5.png)
 
 - Choose Office 365 Management API
-   ![Office 365 Management API](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture6.png)
+  ![Office 365 Management API](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture6.png)
 
 - Choose Application permissions for later use in the Power Automate
    ![App Permission](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture7.png)
@@ -70,7 +70,7 @@ Create an Azure AD app to Query the Message Center API.
   ![Teams Channel](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture16.png)
 
 - Click the + sign and add Lists as a tab in the general channel
-![Lists in Teams](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture17.png)
+  ![Lists in Teams](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture17.png)
 
 ![Lists in Teams2](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture18.png)
 
