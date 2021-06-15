@@ -70,9 +70,9 @@ Create an Azure AD app to Query the Message Center API.
   ![Teams Channel](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture16.png)
 
 - Click the + sign and add Lists as a tab in the general channel
-  ![Lists in Teams](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture17.png)
+![Lists in Teams](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture17.png)
 
-  ![Lists in Teams2](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture18.png)
+![Lists in Teams2](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture18.png)
 
 - In the Lists Tab click Create a list
   ![Create List](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture19.png)
