@@ -45,3 +45,15 @@ Create an Azure AD app to Query the Message Center API.
    ![Remove Default Permission](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture9.png)
 - Grant Admin Consent for your tenant (Extra permission Required see PreReqs)
   ![Grant Admin Consent](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture10.png)
+  ![Granted Admin Consent](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture11.png)
+- Go in Certificates & Secrets section to generate a new Client secrets
+  ![Cert & Secrets Section](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture12.png)
+- Name it and choose an expiry date according to your security practice
+  ![Secret creation](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture13.png)
+- Save the Generated Secret for later use, it cannot be displayed again
+  ![Secret generated](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture14.png)
+
+### Create the Microsoft List in the team of your choosing
+
+- Open the team (you are an owner of) you want the solution to be available in.
+  ![Teams Channel](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture16.png)
