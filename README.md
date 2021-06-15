@@ -19,7 +19,7 @@ Its goal is to leverage Teams and SharePoint list to ease the access and simplif
 
 Create an Azure AD app to Query the Message Center API.
 
-- Go in App Registrations view in Azure AD admin portal
+- Go in App Registrations view in [Azure AD admin portal](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)
     ![New App Registration](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture2.png)
 
     Click register a New apps in your tenant.
