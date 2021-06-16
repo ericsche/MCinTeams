@@ -15,7 +15,8 @@ Its goal is to leverage Teams and SharePoint list to ease the access and simplif
   - Microsoft Teams
     - [Create the Microsoft List in the team of your choosing](#create-the-microsoft-list-in-the-team-of-your-choosing)
   - PowerAutomate
-    - [Import/Configure the Initiate Message Center PowerAutomate](#importconfigure-the-initiate-message-center-powerautomate)
+    - [Import the 3 flows in PowerAutomate](#import-the-3-flows-in-powerautomate)
+    - [Configure the **Initiate** MC flow](#configure-the-initiate-mc-flow)
 
 ### PreReqs
 
@@ -143,7 +144,7 @@ Create an Azure AD app to Query the Message Center API.
 
 ![Sort config](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture30.png)
 
-### Import/Configure the Initiate Message Center PowerAutomate
+### Import the 3 flows in PowerAutomate
 
 - Download the flows that are [available here](https://github.com/ericsche/MCinTeams/tree/main/PowerAutomate%20Exports)
 
@@ -163,4 +164,21 @@ Create an Azure AD app to Query the Message Center API.
 
 ![Update flow connections](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture34.png)
 
-> **Note:** For the Microsoft Teams connection you can either use your account or a resource account that will avoid you all the notifications from like & comments if needed.
+> **Note:** For the Microsoft Teams connection you can either use your account or a resource account that will avoid you all the notifications from likes & comments if needed.
+
+- Reapeat the same steps for all flows
+
+### Configure the **Initiate MC** flow
+
+- Click the **Edit** button for the Initiate MC flow
+
+![Edit flow](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture36.png)
+
+- Now update every variables at the begining of your flow : TenantID, ClientID, AppSecret, SharepointSiteURL, ListName
+
+![Update Variables](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture37.png)
+
+> **Note:** TenantID, ClientID & AppSecrets are values you saved from the [Create the Azure AD App Id](#create-the-azure-ad-app-id) section.
+> SharepointSiteURL should be the base URL of the Sharepoint Site backing up the team you hosted the solution in. It should looklike https://TENANTNAME.sharepoint.com/teams/TEAMNAME/.
+> ListName should be the full name of the list you created in the [Create the Microsoft List in the team of your choosing](#create-the-microsoft-list-in-the-team-of-your-choosing) section.
+
