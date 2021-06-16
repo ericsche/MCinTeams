@@ -174,11 +174,11 @@ Create an Azure AD app to Query the Message Center API.
 
 ![Edit flow](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture36.png)
 
-- Now update every variables at the begining of your flow : TenantID, ClientID, AppSecret, SharepointSiteURL, ListName
+- Now update every variables at the begining of your flow : **TenantID, ClientID, AppSecret, SharepointSiteURL, ListName**
 
 ![Update Variables](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture37.png)
 
-> **Note:** TenantID, ClientID & AppSecrets are values you saved from the [Create the Azure AD App Id](#create-the-azure-ad-app-id) section.
-> SharepointSiteURL should be the base URL of the Sharepoint Site backing up the team you hosted the solution in. It should looklike https://TENANTNAME.sharepoint.com/teams/TEAMNAME/.
-> ListName should be the full name of the list you created in the [Create the Microsoft List in the team of your choosing](#create-the-microsoft-list-in-the-team-of-your-choosing) section.
+> **Note:** **TenantID, ClientID & AppSecrets** are values you saved from the [Create the Azure AD App Id](#create-the-azure-ad-app-id) section.
+> **SharepointSiteURL** should be the base URL of the Sharepoint Site backing up the team you hosted the solution in. It should looklike ```https://TENANTNAME.sharepoint.com/teams/TEAMNAME/```.
+> **ListName should** be the full name of the list you created in the [Create the Microsoft List in the team of your choosing](#create-the-microsoft-list-in-the-team-of-your-choosing) section.
 
