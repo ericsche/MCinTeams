@@ -144,3 +144,23 @@ Create an Azure AD app to Query the Message Center API.
 ![Sort config](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture30.png)
 
 ### Import/Configure the Initiate Message Center PowerAutomate
+
+- Download the flows that are [available here](https://github.com/ericsche/MCinTeams/tree/main/PowerAutomate%20Exports)
+
+- Connect to [PowerAutomate](https://flow.microsoft.com/) with a user that has a **PowerAutomate user plan** license
+  
+- Navigate to the **My flows** page and click the Import button
+
+![import flow](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture31.png)
+
+- Look for the flows and upload the first one
+
+![Upload flow](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture32.png)
+
+- You will be asked to updates some for the flow informations before you can more forward. Feel free to update the name of the flow and marke sure you import connections so PowerAutomate can connect to the List and Teams. The account you should should be at least a member of the team you should to host the List and the channel where the message will be posted.
+
+![Update flow infos](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture33.png)
+
+![Update flow connections](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture34.png)
+
+> **Note:** For the Microsoft Teams connection you can either use your account or a resource account that will avoid you all the notifications from like & comments if needed.
