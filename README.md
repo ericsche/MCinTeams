@@ -9,13 +9,13 @@ Its goal is to leverage Teams and SharePoint list to ease the access and simplif
 
 ## Deployment steps
 
-    - [PreReqs](#prereqs)
-    - Azure AD
-      - [Create the Azure AD App Id](#create-the-azure-ad-app-id)
-    - Microsoft Teams
-      - [Create the Microsoft List in the team of your choosing](#create-the-microsoft-list-in-the-team-of-your-choosing)
-    - PowerAutomate
-      - [Import/Configure the Initiate Message Center PowerAutomate](#importconfigure-the-initiate-message-center-powerautomate)
+  - [PreReqs](#prereqs)
+  - Azure AD
+    - [Create the Azure AD App Id](#create-the-azure-ad-app-id)
+  - Microsoft Teams
+    - [Create the Microsoft List in the team of your choosing](#create-the-microsoft-list-in-the-team-of-your-choosing)
+  - PowerAutomate
+    - [Import/Configure the Initiate Message Center PowerAutomate](#importconfigure-the-initiate-message-center-powerautomate)
 
 ### PreReqs
 
