@@ -9,11 +9,13 @@ Its goal is to leverage Teams and SharePoint list to ease the access and simplif
 
 ## Deployment steps
 
-1. Create the Azure AD App ID to get your Tenant's Message Center posts
-2. Create the Microsoft List in the team of your choosing
-3. Import/Configure the Initiate MC PA.
-4. Import/Configure the Get MC PA
-5. Import/Configure the Post MC  
+    - [PreReqs](#prereqs)
+    - Azure AD
+      - [Create the Azure AD App Id](#create-the-azure-ad-app-id)
+    - Microsoft Teams
+      - [Create the Microsoft List in the team of your choosing](#create-the-microsoft-list-in-the-team-of-your-choosing)
+    - PowerAutomate
+      - [Import/Configure the Initiate Message Center PowerAutomate](#importconfigure-the-initiate-message-center-powerautomate)
 
 ### PreReqs
 
@@ -115,3 +117,30 @@ Create an Azure AD app to Query the Message Center API.
 - Finish the list creation by giving it a name, description, an icon and a color
 
 ![end list creation](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture24.png)
+
+- Edit List fields to support rich text, right click on MessageText, Column settings & Edit
+
+![Column Settings](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture25.png)
+
+- Click on **More options** and make sure that the **Use enhanced rich text** check box is on and click Save
+
+![enhanced rich text](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture26.png)
+
+- Do the same for the column **LastUpdate Message**
+- Opne the list in SharePoint Online
+
+![open in SharePoint](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture27.png)
+
+- Modify the current View to improve the presentation of MC
+
+![Edit View](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture28.png)
+
+- Change the Column displayed : Title (linked to item), Product and PublishedTime in that order
+
+![Column config](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture29.png)
+
+- Change host sort the items : sort by PublishedTime in ascending order
+
+![Sort config](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture30.png)
+
+### Import/Configure the Initiate Message Center PowerAutomate
