@@ -194,4 +194,32 @@ Create an Azure AD app to Query the Message Center API.
   
     ![Edit trigger](Screenshots/Picture38.png)
 
-- Now update every variables at the beginning of your flow : **TenantID, ClientID, AppSecret, SharepointSiteURL, ListName**
+- Now update the following variables at the beginning of your flow with the relevant info: **TenantID, ClientID, AppSecret, SharepointSiteURL, ListName**
+
+- You'll also notice a variable named **ProductName** this one control which Product Messages you want to post into Teams. You can use the following table as a reference. You can clone this flow to post the messages you want either in the same channel or to a channel dedicated per Product.
+
+:::row:::
+    :::column:::
+        **Product Name**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Dynamics 365
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Dynamics 365 Apps
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Dynamics 365 Business Central
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Exchange Online
+    :::column-end:::
+:::row-end:::
