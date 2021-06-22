@@ -198,28 +198,34 @@ Create an Azure AD app to Query the Message Center API.
 
 - You'll also notice a variable named **ProductName** this one control which Product Messages you want to post into Teams. You can use the following table as a reference. You can clone this flow to post the messages you want either in the same channel or to a channel dedicated per Product.
 
-:::row:::
-    :::column:::
-        **Product Name**
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Dynamics 365
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Dynamics 365 Apps
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Dynamics 365 Business Central
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Exchange Online
-    :::column-end:::
-:::row-end:::
+|**Product Name**  |
+|---------|
+|Dynamics 365   |
+|Dynamics 365 Apps    |
+|Dynamics 365 Business Central    |
+|Exchange Online   |
+|Row5     |
+|Row6     |
+|Row7     |
+|Row8     |
+|Row9     |
+|Row10     |
+|Row11     |
+|Row12     |
+|Row13     |
+|Row14     |
+|Row15     |
+|Row16     |
+|Row17     |
+|Row18     |
+|Row19     |
+|Row20     |
+|Row21     |
+|Row22     |
+|Row23     |
+|Row24     |
+|Row25     |
+|Row26     |
+|Row27     |
+|Row28     |
+|Row29     |
