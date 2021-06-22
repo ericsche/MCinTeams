@@ -5,7 +5,7 @@
 Message Center in Teams is a simple PowerAutomate Solution to gather Message Center Announcement and post them in a Teams Channel.
 Its goal is to leverage Teams and SharePoint list to ease the access and simplify sharing of message center announcement.
 
-![Message Center Post in Teams](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture1.png)
+    ![Message Center Post in Teams](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture1.png)
 
 ## Deployment steps
 
@@ -103,7 +103,7 @@ Create an Azure AD app to Query the Message Center API.
 
     ![Column Types](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture23.png)
 
-    | **Colum Title** | **Type**  |
+    | **Column Title** | **Type**  |
     |---------|---------|
     |Title     | Title      |
     |Product     | Single line of text        |
@@ -164,7 +164,7 @@ Create an Azure AD app to Query the Message Center API.
 
     > **Note:** For the Microsoft Teams connection you can either use your account or a resource account that will avoid you all the notifications from likes & comments if needed.
 
-- Reapeat the same steps for all flows
+- Repeat the same steps for all flows
 
 ### Configure the **Initiate MC** flow
 
