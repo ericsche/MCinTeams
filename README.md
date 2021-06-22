@@ -192,4 +192,6 @@ Create an Azure AD app to Query the Message Center API.
 - Click the **Edit** button for the Get New MC flow
 - Edit the flow trigger : **When an Item is created or modified** make sure you select the Sharepoint site hosting the solution and the List storing the messages.
   
-![Edit trigger](Screenshots/Picture38.png)
+            ![Edit trigger](Screenshots/Picture38.png)
+
+- Now update every variables at the beginning of your flow : **TenantID, ClientID, AppSecret, SharepointSiteURL, ListName**
