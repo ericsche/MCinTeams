@@ -16,7 +16,7 @@ Its goal is to leverage Teams and SharePoint list to ease the access and simplif
     - [Create the Microsoft List in the team of your choosing](#create-the-microsoft-list-in-the-team-of-your-choosing)
   - PowerAutomate
     - [Import the 3 flows in PowerAutomate](#import-the-3-flows-in-powerautomate)
-    - [Configure the **Initiate** MC flow](#configure-the-initiate-mc-flow)
+    - [Configure the **Initiate MC** flow](#configure-the-initiate-mc-flow)
 
 ### PreReqs
 
@@ -174,11 +174,22 @@ Create an Azure AD app to Query the Message Center API.
 
 ![Edit flow](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture36.png)
 
-- Now update every variables at the begining of your flow : **TenantID, ClientID, AppSecret, SharepointSiteURL, ListName**
+- Now update every variables at the beginning of your flow : **TenantID, ClientID, AppSecret, SharepointSiteURL, ListName**
 
 ![Update Variables](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture37.png)
 
 > **Note:** **TenantID, ClientID & AppSecrets** are values you saved from the [Create the Azure AD App Id](#create-the-azure-ad-app-id) section.
-> **SharepointSiteURL** should be the base URL of the Sharepoint Site backing up the team you hosted the solution in. It should looklike ```https://TENANTNAME.sharepoint.com/teams/TEAMNAME/```.
+> **SharepointSiteURL** should be the base URL of the SharePoint Site backing up the team you hosted the solution in. It should look like ```https://TENANT NAME.sharepoint.com/teams/TEAM NAME/```.
 > **ListName should** be the full name of the list you created in the [Create the Microsoft List in the team of your choosing](#create-the-microsoft-list-in-the-team-of-your-choosing) section.
 
+### Configure the **Get New MC** flow
+
+- Click the **Edit** button for the Get New MC flow
+- Now update every variables at the beginning of your flow : **TenantID, ClientID, AppSecret, SharepointSiteURL, ListName**
+
+### Configure the **Post in Teams - Teams MC** flow
+
+- Click the **Edit** button for the Get New MC flow
+- Edit the flow trigger : **When an Item is created or modified** make sure you select the Sharepoint site hosting the solution and the List storing the messages.
+  
+![Edit trigger](Screenshots/Picture38.png)
