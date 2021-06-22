@@ -17,6 +17,8 @@ Its goal is to leverage Teams and SharePoint list to ease the access and simplif
   - PowerAutomate
     - [Import the 3 flows in PowerAutomate](#import-the-3-flows-in-powerautomate)
     - [Configure the **Initiate MC** flow](#configure-the-initiate-mc-flow)
+    - [Configure the **Get New MC** flow](#configure-the-get-new-mc-flow)
+    - [Configure the **Post in Teams - Teams MC** flow](#configure-the-post-in-teams---teams-mc-flow)
 
 ### PreReqs
 
@@ -117,32 +119,32 @@ Create an Azure AD app to Query the Message Center API.
 
 - Finish the list creation by giving it a name, description, an icon and a color
 
-![end list creation](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture24.png)
+    ![end list creation](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture24.png)
 
 - Edit List fields to support rich text, right click on MessageText, Column settings & Edit
 
-![Column Settings](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture25.png)
+    ![Column Settings](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture25.png)
 
 - Click on **More options** and make sure that the **Use enhanced rich text** check box is on and click Save
 
-![enhanced rich text](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture26.png)
+    ![enhanced rich text](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture26.png)
 
 - Do the same for the column **LastUpdate Message**
-- Opne the list in SharePoint Online
+- Open the list in SharePoint Online
 
-![open in SharePoint](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture27.png)
+    ![open in SharePoint](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture27.png)
 
 - Modify the current View to improve the presentation of MC
 
-![Edit View](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture28.png)
+    ![Edit View](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture28.png)
 
 - Change the Column displayed : Title (linked to item), Product and PublishedTime in that order
 
-![Column config](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture29.png)
+    ![Column config](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture29.png)
 
 - Change host sort the items : sort by PublishedTime in ascending order
 
-![Sort config](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture30.png)
+    ![Sort config](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture30.png)
 
 ### Import the 3 flows in PowerAutomate
 
@@ -152,19 +154,19 @@ Create an Azure AD app to Query the Message Center API.
   
 - Navigate to the **My flows** page and click the Import button
 
-![import flow](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture31.png)
+    ![import flow](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture31.png)
 
 - Look for the flows and upload the first one
 
-![Upload flow](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture32.png)
+    ![Upload flow](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture32.png)
 
 - You will be asked to updates some for the flow informations before you can more forward. Feel free to update the name of the flow and marke sure you import connections so PowerAutomate can connect to the List and Teams. The account you should should be at least a member of the team you should to host the List and the channel where the message will be posted.
 
-![Update flow infos](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture33.png)
+    ![Update flow infos](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture33.png)
 
-![Update flow connections](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture34.png)
+    ![Update flow connections](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture34.png)
 
-> **Note:** For the Microsoft Teams connection you can either use your account or a resource account that will avoid you all the notifications from likes & comments if needed.
+    > **Note:** For the Microsoft Teams connection you can either use your account or a resource account that will avoid you all the notifications from likes & comments if needed.
 
 - Reapeat the same steps for all flows
 
@@ -172,15 +174,15 @@ Create an Azure AD app to Query the Message Center API.
 
 - Click the **Edit** button for the Initiate MC flow
 
-![Edit flow](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture36.png)
+    ![Edit flow](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture36.png)
 
 - Now update every variables at the beginning of your flow : **TenantID, ClientID, AppSecret, SharepointSiteURL, ListName**
 
-![Update Variables](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture37.png)
+    ![Update Variables](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture37.png)
 
-> **Note:** **TenantID, ClientID & AppSecrets** are values you saved from the [Create the Azure AD App Id](#create-the-azure-ad-app-id) section.
-> **SharepointSiteURL** should be the base URL of the SharePoint Site backing up the team you hosted the solution in. It should look like ```https://TENANT NAME.sharepoint.com/teams/TEAM NAME/```.
-> **ListName should** be the full name of the list you created in the [Create the Microsoft List in the team of your choosing](#create-the-microsoft-list-in-the-team-of-your-choosing) section.
+    > **Note:** **TenantID, ClientID & AppSecrets** are values you saved from the [Create the Azure AD App Id](#create-the-azure-ad-app-id) section.
+    > **SharepointSiteURL** should be the base URL of the SharePoint Site backing up the team you hosted the solution in. It should look like ```https://TENANT NAME.sharepoint.com/teams/TEAM NAME/```.
+    > **ListName should** be the full name of the list you created in the [Create the Microsoft List in the team of your choosing](#create-the-microsoft-list-in-the-team-of-your-choosing) section.
 
 ### Configure the **Get New MC** flow
 
@@ -198,34 +200,36 @@ Create an Azure AD app to Query the Message Center API.
 
 - You'll also notice a variable named **ProductName** this one control which Product Messages you want to post into Teams. You can use the following table as a reference. You can clone this flow to post the messages you want either in the same channel or to a channel dedicated per Product.
 
-|**Product Name**  |
-|---------|
-|Dynamics 365   |
-|Dynamics 365 Apps    |
-|Dynamics 365 Business Central    |
-|Exchange Online   |
-|Row5     |
-|Row6     |
-|Row7     |
-|Row8     |
-|Row9     |
-|Row10     |
-|Row11     |
-|Row12     |
-|Row13     |
-|Row14     |
-|Row15     |
-|Row16     |
-|Row17     |
-|Row18     |
-|Row19     |
-|Row20     |
-|Row21     |
-|Row22     |
-|Row23     |
-|Row24     |
-|Row25     |
-|Row26     |
-|Row27     |
-|Row28     |
-|Row29     |
+    |**Product Name**  |
+    |---------|
+    |Dynamics 365   |
+    |Dynamics 365 Apps    |
+    |Dynamics 365 Business Central    |
+    |Exchange Online   |
+    |Exchange Online Protection     |
+    |Finance and Operations Apps    |
+    |Identity Service     |
+    |Microsoft 365 Apps     |
+    |Microsoft 365 Defender     |
+    |Microsoft 365 suite     |
+    |Microsoft Bookings     |
+    |Microsoft Defender ATP     |
+    |Microsoft Forms     |
+    |Microsoft Intune     |
+    |Microsoft Power Automate     |
+    |Microsoft Power Automate in Microsoft 365     |
+    |Microsoft Stream     |
+    |Microsoft Teams     |
+    |Mobile Device Management for Office 365     |
+    |Office Client Applications     |
+    |Office for the web     |
+    |OneDrive for Business     |
+    |Planner     |
+    |Power Apps     |
+    |Power Apps in Microsoft 365     |
+    |SharePoint Online     |
+    |SharePoint Syntex     |
+    |Skype for Business     |
+    |Yammer Enterprise     |
+
+>**Note:** List is an export of the product available in June 2021, this will surely evolve, feel free to update it :). For more info related to the datasource please visit the [Office 365 Management API Page](https://docs.microsoft.com/en-us/office/office-365-management-api/).
