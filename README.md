@@ -101,21 +101,17 @@ Create an Azure AD app to Query the Message Center API.
 
 - Make sure you configure the right column types for each one
 
-    ![Colomn Types](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture23.png)
+    ![Column Types](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture23.png)
 
-    Title > Title
-
-    Product > Single line of text
-
-    PublishedTime > Date and time
-
-    LastUpdate Message > Multiple lines of text
-
-    LastUpdate Time > Date and time
-
-    MessageID > Single line of text
-
-    MessageText > Multiple lines of text
+    | **Colum Title** | **Type**  |
+    |---------|---------|
+    |Title     | Title      |
+    |Product     | Single line of text        |
+    |PublishedTime     | Date and time      |
+    |RowLastUpdate Message     | Multiple lines of text        |
+    |LastUpdate Time      | Date and time        |
+    |MessageID     | Single line of text        |
+    |MessageText     | Multiple lines of text         |
 
 - Finish the list creation by giving it a name, description, an icon and a color
 
