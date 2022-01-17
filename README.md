@@ -111,7 +111,7 @@ Create an Azure AD app to Query the Message Center API.
     |Title     | Title      |
     |Product     | Single line of text        |
     |PublishedTime     | Date and time      |
-    |RowLastUpdate Message     | Multiple lines of text        |
+    |LastUpdate Message     | Multiple lines of text        |
     |LastUpdate Time      | Date and time        |
     |MessageID     | Single line of text        |
     |MessageText     | Multiple lines of text         |
