@@ -1,5 +1,8 @@
 # Message Center in Teams
 
+
+## Solution is out of order since Jan 3rd, the MC API changed we are working on updating the code :)
+
 ## Description
 
 Message Center in Teams is a simple PowerAutomate Solution to gather Message Center Announcement and post them in a Teams Channel.
