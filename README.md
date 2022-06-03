@@ -1,5 +1,8 @@
 # Message Center in Teams
 
+
+## Solution is out of order since Jan 3rd, the MC API changed we are working on updating the code :)
+
 ## Description
 
 Message Center in Teams is a simple PowerAutomate Solution to gather Message Center Announcement and post them in a Teams Channel.
@@ -116,7 +119,7 @@ Message Center in teams v2 now leverage a Power Automate unamanged solution to i
     |Title     | Title      |
     |Product     | Single line of text        |
     |PublishedTime     | Date and time      |
-    |RowLastUpdate Message     | Multiple lines of text        |
+    |LastUpdate Message     | Multiple lines of text        |
     |LastUpdate Time      | Date and time        |
     |MessageID     | Single line of text        |
     |MessageText     | Multiple lines of text         |
@@ -185,7 +188,7 @@ Message Center in teams v2 now leverage a Power Automate unamanged solution to i
     ![Update Variables](https://github.com/ericsche/MCinTeams/blob/main/Screenshots/Picture37.png)
 
     > **Note:** **TenantID, ClientID & AppSecrets** are values you saved from the [Create the Azure AD App Id](#create-the-azure-ad-app-id) section.
-    > **SharepointSiteURL** should be the base URL of the SharePoint Site backing up the team you hosted the solution in. It should look like ```https://TENANT NAME.sharepoint.com/teams/TEAM NAME/```.
+    > **SharepointSiteURL** should be the base URL of the SharePoint Site backing up the team you hosted the solution in. It should look like ```https://TENANT NAME.sharepoint.com/teams/TEAM NAME/``` or ```https://TENANT NAME.sharepoint.com/sites/TEAM NAME/```.
     > **ListName should** be the full name of the list you created in the [Create the Microsoft List in the team of your choosing](#create-the-microsoft-list-in-the-team-of-your-choosing) section.
 
 ### Configure the **Get New MC** flow
