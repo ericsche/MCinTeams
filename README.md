@@ -80,7 +80,7 @@ Create an Azure AD app to Query the Message Center API.
 
 ### Import the MC in Teams Solution in Power Automate
 
-Message Center in teams v2 now leverage a Power Automate unamanged solution to improve the installation flow. [For more details on Power Automate solutions click here.](https://docs.microsoft.com/en-us/power-automate/overview-solution-flows)
+Message Center in teams v2 now leverage a Power Automate unmanaged solution to improve the installation flow. [For more details on Power Automate solutions click here.](https://docs.microsoft.com/en-us/power-automate/overview-solution-flows)
 
 - Download the Power Automate Solution that is [available here](https://github.com/ericsche/MCinTeams/blob/main/MCinTeams_1_0_0_6.zip)
 
@@ -118,7 +118,7 @@ Message Center in teams v2 now leverage a Power Automate unamanged solution to i
   
   ![Edit Environement Variables](Screenshots/Solutions07.png)
 
-> **Note:** If you were unable to create your AppClientID and AppSecret you can keep the default ones. They'll work but note that they are linked to my tenant hosted in Europe. Some Message Center posts are tenant specific so you might miss some if you not use your own credentials.
+> **Note:** If you were unable to create your AppClientID and AppSecret you can keep the default ones. They'll work but note that they are linked to my tenant hosted in Europe. Some Message Center posts are tenant specific so you might miss some if you don't use your own credentials.
 
 ### Initialize the Solution
 
